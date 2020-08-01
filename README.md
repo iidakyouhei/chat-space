@@ -14,26 +14,24 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|group_id|integer|null: false|
 
 ### Association
-- has_many :grops_user
-- has_many :message
-- has_many :user, through: :grops_user
+- has_many :grops_users
+- has_many :messages
+- has_many :users, through: :grops_user
 
 ## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
 |name|string|null: false, index: true,unique:true|
 |mail|string|null: false|
 |pass|string|null: false|
 
 
 ### Association
-- has_many :grops_user
-- has_many :message
+- has_many :grops_users
+- has_many :messages
 - has_many :groups, through: :grops_user
 
 ## messagesテーブル
