@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
-  has_many :grops_user
-  has_many :message
-  has_many :user, through: :grops_user
+  has_many :grops_users
+  has_many :messages
+  has_many :users, through: :grops_user
 end
