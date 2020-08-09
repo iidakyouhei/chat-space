@@ -1,0 +1,19 @@
+.Side-bar
+  .LeftHeder
+    .LeftHeder__Box
+      %p.Name
+      %ul.LeftHeder__Box__icon-box
+        %li.icon-edit
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.icon-cog
+          = link_to "#" do
+            = icon('fas', 'cog')
+
+  .GroupList
+    = link_to "#", class:"Group" do
+      %p.Group__name
+      %p.Group__message
+
+      
+

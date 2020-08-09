@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+.Side-bar {
+  background-color: #253141;
+  width: 300px;
+  color: #ffffff;
+}
+.LeftHeder {
+  background-color: #253141;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  &__Box{
+    height: 20px;
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    &__icon-box{
+      display: flex;
+      li {
+        a{
+          color: white;
+        }
+      }
+    }
+  }
+}
+.icon-edit{
+  margin-right: 5px;
+}
+
+.GroupList {
+      background-color: #2f3e51;
+      height: calc(100vh - 100px);
+      padding: 0 20px;
+  .Group{
+    color: white;
+    text-decoration:  none;
+    padding: 20px;
+    &__name{
+      font-size: 15px;
+    }
+  &__message{
+    font-size: 11px;
+    margin-top: 5px;
+    }
+  }
+}
+
+.Chat-main {
+  background-color: #ffffff;
+  width: calc(100vw - 300px);
+}
+  .RightHeader{
+    height: 100px;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+      &__Name{
+        color: #333333;
+        font-size: 20px;
+        margin-top: 35px;
+      }
+    .RightHeader__list {
+      color: #999999;
+      display: flex;
+      font-size: 12px;
+      margin-top: 15px;
+      &__member{
+        padding-right: 5px;
+      }
+    }
+    &__edit{
+      display: block;
+      border: 1px solid #38AEF0;
+      color: #38AEF0;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 28px;
+      padding: 0 20px;
+      text-decoration: none;
+    }
+  }
+
+  .MessageField{
+    background-color: #fafafa;
+    box-sizing: border-box;
+    padding: 35px 40px 0;
+    height: calc(100vh - 100px - 90px);
+    }
+  .MessageBox{
+  margin-bottom: 46px;
+  }
+  .MessageInfo{
+    display: flex;
+    &__user{
+      color: #434a54;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &__date{
+      color: #999999;
+      font-size: 12px;
+      padding-left: 10px;
+    }
+  }
+.Message{
+  margin-top: 12px;
+  &__test{
+    color: #434a54;
+    font-size: 14px;
+  }
+}
+
+  .Footer{
+        background-color: #d2d2d2;
+        height: 90px;
+        padding: 20px 40px;
+  }
+  Form{
+    display: flex;
+    justify-content: space-between;
+    .Form-text{
+      display: flex;
+      width: 100%;
+      position: relative;
+    &__box{
+      width: 100%;
+      height: 50px;
+      padding: 0 40px 0 10px;
+      border: none;
+    }
+    &__image{
+      position: absolute;
+      top:10px;
+      right: 10px;
+      &__file{
+        display: none
+      }
+    }
+  }
+}
+  .submit{
+    background-color: #38AEF0;
+    color: #ffffff;
+    height: 50px;
+    margin-left: 15px;
+    padding: 0 30px;
+    border: none;
+  }
