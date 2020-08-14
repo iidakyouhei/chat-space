@@ -5,16 +5,19 @@
         = current_user.name
       %ul.LeftHeder__Box__icon-box
         %li.icon-edit
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('fas', 'edit')
         %li.icon-cog
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
 
   .GroupList
-    = link_to "#", class:"Group" do
-      %p.Group__name testG
-      %p.Group__message testm
+    - current_user.groups.each do |group|
+      = link_to "#", class:"Group" do
+        %p.Group__name
+          = group.name
+        %p.Group__message
+          メッセージはまだありません
 
       
 
