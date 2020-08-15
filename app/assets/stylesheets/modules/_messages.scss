@@ -48,9 +48,9 @@
     &__name{
       font-size: 15px;
     }
-  &__message{
-    font-size: 11px;
-    margin-top: 5px;
+    &__message{
+      font-size: 11px;
+      margin-top: 5px;
     }
   }
 }
@@ -98,7 +98,7 @@
     height: calc(100vh - 100px - 90px);
     }
   .MessageBox{
-  margin-bottom: 46px;
+    margin-bottom: 46px;
   }
   .MessageInfo{
     display: flex;
