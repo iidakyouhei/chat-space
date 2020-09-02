@@ -1,6 +1,6 @@
 # config valid for current version and patch releases of Capistrano
 lock '3.14.1'
-
+set :deploy_to, "/var/www/chat-space"
 set :application, 'chat-space'
 set :repo_url,  'git@github.com:iidakyouhei/chat-space.git'
 
