@@ -6,7 +6,8 @@
       %ul.RightHeader__list
         Menber：
         %li.RightHeader__list__member
-          = current_user.name
+          - @group.users.each do |user|
+            = user.name
     = link_to 'Edit', edit_group_path(@group), class: "RightHeader__edit"
 
   .MessageField
